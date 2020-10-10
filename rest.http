@@ -1,0 +1,55 @@
+#################### bookstore ####################
+### GET store
+GET http://localhost:4000/store
+Content-Type: application/json
+
+### GET enroll
+GET http://localhost:4000/enroll
+Content-Type: application/json
+
+### GET author
+GET http://localhost:4000/author
+Content-Type: application/json
+
+### GET book
+GET http://localhost:4000/book
+Content-Type: application/json
+
+### GET author
+GET http://localhost:4000/author?penName=red
+Content-Type: application/json
+
+### POST author
+POST http://localhost:4000/author
+Content-Type: application/json
+
+{
+    "penName" : "black rose"
+}
+
+### POST book
+POST http://localhost:4000/book
+Content-Type: application/json
+
+{
+    "title" : "cooking",
+    "name":"cooking with master checf",
+    "author":"5f8189b62fa57b1a68502417"
+}
+
+### POST store
+POST http://localhost:4000/store
+Content-Type: application/json
+
+{
+    "name":"duel store"
+}
+
+### POST enroll
+POST http://localhost:4000/enroll
+Content-Type: application/json
+
+{
+    "store":"5f81e6bc0742b32f14283ad8",
+    "book":"5f81a9f2a9a46e4478f5e88a"
+}
